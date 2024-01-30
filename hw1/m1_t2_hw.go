@@ -1,14 +1,14 @@
 /*
 Задача № 2. Получить реверсную запись трехзначного числа
-Пример: 
+Пример:
 вход: 346, выход: 643
 вход: 100, выход: 001
 */
 package main
 
 import (
-    "strconv"
-    "fmt"
+	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -19,9 +19,9 @@ func main() {
 	fmt.Print("Введите трехзначное число: ")
 	fmt.Scanf("%d", &num)
 
-    str := strconv.Itoa(num)
+	str := strconv.Itoa(num)
 	for _, v := range str {
-        rev = string(v) + rev
-    }
-    fmt.Println(rev)
+		rev = string(v) + rev
+	}
+	fmt.Println(rev)
 }

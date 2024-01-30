@@ -1,4 +1,4 @@
-﻿/*
+/*
 Задача № 4. Проверить, является ли четырехзначное число палиндромом
 Пример:
 Вход: 1221  Выход: 1221 - палиндром
@@ -7,7 +7,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
@@ -19,9 +19,9 @@ func main() {
 	fmt.Scanf("%d", &src)
 
 	num := src
-    for num > 0 {
+	for num > 0 {
 		tmp := num % 10
-		rev = rev * 10 + tmp
+		rev = rev*10 + tmp
 		num /= 10
 	}
 
