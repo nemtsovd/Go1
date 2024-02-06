@@ -54,6 +54,12 @@ func getInt() (int, error) {
 
 func getEnding(number int) string {
 
+	switch number % 100 / 10 {
+
+	case 1:
+		return "ок"
+	}
+
 	switch number % 10 {
 
 	case 0, 5, 6, 7, 8, 9:
